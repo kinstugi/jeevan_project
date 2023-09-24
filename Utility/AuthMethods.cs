@@ -43,7 +43,7 @@ public class AuthMethods{
     }
 
     public static int GetUserIdFromAffiliateLink(string affiliateLink){
-        string[] parts = affiliateLink.Split('?')[1].Split('=')[1].Split('-');
+        string[] parts = affiliateLink.Split('-');
         return int.Parse(parts[0]);
     }
 }
