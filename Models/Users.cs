@@ -10,7 +10,7 @@ public class User{
     public byte[] PasswordHash { get; set; } = null!;
     public List<Child> Children { get; } = new List<Child>();
     public List<Payment> Payments { get; } = new List<Payment>();
-
+    public double Profit { get; set; }
 
     public bool AddChild(Child child){
         var res = Children.Where(ch => ch.ChildId == child.ChildId).ToList();
